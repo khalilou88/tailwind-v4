@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ScFloatingLabel } from './floating-label';
 
 @Component({
   selector: 'sc-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ScFloatingLabel],
   template: `
     <h1 class="text-3xl font-bold underline">Hello, {{ title }}!</h1>
+
+
+
+    <sc-floating-label />
+
+
     <router-outlet />
   `,
   styles: ``,
